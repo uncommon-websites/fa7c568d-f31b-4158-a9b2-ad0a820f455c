@@ -6,16 +6,50 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+<CustomerCardHero
+	centered={true}
+	title="Accelerate your U.S. market entry with venture-grade guidance"
+	subtitle="We help Indian founders raise Series A from U.S. investors and expand stateside with strategic positioning, credible connections, and proven market translation expertise."
+	customers={[
+		{
+			name: "Rajesh Kumar",
+			position: "Founder & CEO",
+			imageSrc: "/generated/image-centered-portrait-of-an-indian-male-entr.webp"
+		},
+		{
+			name: "Priya Sharma",
+			position: "Co-founder",
+			imageSrc: "/generated/image-centered-portrait-of-an-indian-female-fo.webp"
+		},
+		{
+			name: "Arjun Patel",
+			position: "Founder",
+			imageSrc: "/generated/image-centered-portrait-of-an-indian-male-tech.webp"
+		},
+		{
+			name: "Vikram Reddy",
+			position: "CEO",
+			imageSrc: "/generated/image-centered-portrait-of-an-indian-male-star.webp"
+		},
+		{
+			name: "Ananya Iyer",
+			position: "Founder & CTO",
+			imageSrc: "/generated/image-centered-portrait-of-an-indian-female-te.webp"
+		}
+	]}
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by ambitious founders"
+	logoUrls={[
+		'https://cdn.brandfetch.io/zoho.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/freshworks.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/postman.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/chargebee.com/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating
